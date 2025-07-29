@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FlixBus Voice Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      text-align: center;
+      background-color: #f4f6f8;
+      padding: 30px;
+    }
+    h1 {
+      color: #007D42; /* FlixBus Green */
+    }
+    p {
+      color: #333;
+    }
+    img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flixbus_2017_logo.svg/320px-Flixbus_2017_logo.svg.png" alt="FlixBus Logo">
+  <h1>FlixBus Voice Bot Demonstration</h1>
+  <p>Please click the voice bot widget in the corner to begin the demonstration.</p>
+
+  <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6888cac514adedd2365868e6' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+  
+  </body>
+</html>
